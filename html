@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartBite - Order Tracking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🍔 SmartBite</h1>
+        <p>Online Food Ordering System</p>
+    </header>
+
+    <main class="container">
+
+        <section class="order-card">
+            <h2>Order Tracking</h2>
+
+            <div class="food">
+                <div class="food-icon">🍛</div>
+                <div>
+                    <h3>Veg Biryani</h3>
+                    <p>Order ID: SB1024</p>
+                    <p>Amount: ₹120</p>
+                </div>
+            </div>
+
+            <div class="status-box">
+                <h3>Current Order Status</h3>
+                <h2 id="orderStatus">Order Placed</h2>
+                <p id="statusMessage">
+                    Your order has been received!
+                </p>
+            </div>
+
+            <div class="progress">
+                <div class="step active" id="step1">
+                    <span>1</span>
+                    <p>Placed</p>
+                </div>
+
+                <div class="step" id="step2">
+                    <span>2</span>
+                    <p>Preparing</p>
+                </div>
+
+                <div class="step" id="step3">
+                    <span>3</span>
+                    <p>Pickup</p>
+                </div>
+
+                <div class="step" id="step4">
+                    <span>4</span>
+                    <p>Delivery</p>
+                </div>
+
+                <div class="step" id="step5">
+                    <span>5</span>
+                    <p>Delivered</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="control-card">
+            <h2>Restaurant Dashboard</h2>
+            <p>Update the order status:</p>
+
+            <button onclick="nextStatus()">
+                Update Order Status
+            </button>
+
+            <button class="reset" onclick="resetOrder()">
+                Reset Order
+            </button>
+        </section>
+
+        <section class="observer-card">
+            <h2>Observer Management</h2>
+
+            <p id="observerCount">
+                Registered Observers: 2
+            </p>
+
+            <button onclick="addObserver()">
+                Add Observer
+            </button>
+
+            <button class="remove" onclick="removeObserver()">
+                Remove Observer
+            </button>
+
+            <h3>Notification History</h3>
+
+            <div id="notifications">
+                <p>Waiting for order updates...</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>SmartBite © 2026 | Observer Design Pattern</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

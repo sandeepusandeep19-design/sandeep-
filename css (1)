@@ -1,0 +1,169 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff7ed;
+    color: #333;
+}
+
+header {
+    background: #f97316;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.container {
+    width: 90%;
+    max-width: 850px;
+    margin: 30px auto;
+}
+
+section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000012;
+}
+
+h2 {
+    margin-bottom: 18px;
+    color: #c2410c;
+}
+
+.food {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #fff7ed;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.food-icon {
+    font-size: 55px;
+}
+
+.food p {
+    margin-top: 5px;
+    color: #666;
+}
+
+.status-box {
+    background: #ffedd5;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.status-box h2 {
+    color: #ea580c;
+    margin: 12px 0;
+}
+
+.progress {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 8px;
+}
+
+.step {
+    text-align: center;
+    color: #999;
+    flex: 1;
+}
+
+.step span {
+    display: inline-flex;
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    background: #ddd;
+    border-radius: 50%;
+    margin-bottom: 8px;
+}
+
+.step.active {
+    color: #16a34a;
+    font-weight: bold;
+}
+
+.step.active span {
+    background: #16a34a;
+    color: white;
+}
+
+button {
+    background: #f97316;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 7px;
+    margin: 10px 5px 0 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #c2410c;
+}
+
+button.reset {
+    background: #475569;
+}
+
+button.remove {
+    background: #dc2626;
+}
+
+#notifications {
+    background: #f8fafc;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    min-height: 60px;
+}
+
+.notification {
+    padding: 10px;
+    margin-bottom: 8px;
+    background: #dcfce7;
+    border-left: 4px solid #16a34a;
+    border-radius: 5px;
+}
+
+footer {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 550px) {
+    .progress {
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    .step {
+        min-width: 28%;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
